@@ -33,7 +33,7 @@ In the octave/ director you will find a series of scripts used to plot and visua
 
 ## PARALLEL VERSION
 
-A parallel implementation (using MPI) of the FAMOSO library can be found in the parallel folder.
+A parallel implementation (using MPI) of the FAMOSO library's Monte-Carlo integration step can be found in the parallel folder.
 Scaling tests were done on the Texas Advanced Computing Center.
 The corresponding report (and a presentation) can be found in the reports folder.
 

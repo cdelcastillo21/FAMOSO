@@ -1,0 +1,18 @@
+#!/bin/bash
+#----------------------------------------------------
+# Example SLURM job script to run MPI applications
+#----------------------------------------------------
+#SBATCH -J 1E5_1                # Job name
+#SBATCH -o output/%x_%j.o	# Name of stdout output file
+#SBATCH -e output/%x_%j.e       # Name of stdout output file
+#SBATCH -p normal         	# Queue name
+#SBATCH -N 1              	# Total number of nodes requested
+#SBATCH -n 10             	# Total number of mpi tasks requested
+#SBATCH -t 00:30:00       	# Run time (hh:mm:ss) - 10 minutes
+
+# Change to work dir and make necessary data dir
+# cd $HOME/code/test
+# mkdir $WORK/data/$SLURM_JOB_NAME$SLURM_JOB_ID
+
+# Run mpi command
+ibrun -np 10 $HOME/code/test/test_mc 100000 1 data/$SLURM_JOB_ID-$SLURM_JOB_NAME-$SLURM_NNODES-$SLURM_TASKS_PER_NODE

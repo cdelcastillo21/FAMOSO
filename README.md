@@ -31,8 +31,15 @@ Contained in the directory test/ you will find a couple of test scripts that dem
 
 In the octave/ director you will find a series of scripts used to plot and visualize data outputed by the FAMOSO Monte Carlo solver routines. The test scripts in the test/ directory demonstrate how to ouptut Monte Carlo simulation data (which is done by default to the data/ directory). These octave scripts are used to read in and plot this data. 
 
+## PARALLEL VERSION
+
+A parallel implementation (using MPI) of the FAMOSO library can be found in the parallel folder.
+Scaling tests were done on the Texas Advanced Computing Center.
+The corresponding report (and a presentation) can be found in the reports folder.
+
 
 ## MORE INFO
 
 This project was completed back in 2015 to satisfy the senior undergraduate thesis requirements for Carlos del-Castillo-Negrete. 
+The parallel work was completed in 2019 as part of a class project.
 For more info or questions, contact at cdelcastillo21@gmail.com.
